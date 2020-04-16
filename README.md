@@ -81,8 +81,10 @@ Please create feature branches from [develop](https://github.com/mismith0227/hug
 
         // Development
         $ yarn run dev
-        $ // On another tab
-        $ hugo server
+        $ // On another tabA
+        $ cd exampleSite
+        $ ln -s /path/to/hugo_theme_pickles themes/pickles
+        $ hugo server -D -t pickles
 
         // Production (compress)
         $ yarn run prod
